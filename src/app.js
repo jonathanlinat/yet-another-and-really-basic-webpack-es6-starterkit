@@ -1,21 +1,7 @@
-import "babel-polyfill";
-import "./app.sass";
-
-class Rectangle {
-  constructor(hauteur, largeur) {
-    this.hauteur = hauteur;
-    this.largeur = largeur;
-  }
- 
-  get area() {
-    return this.calcArea();
-  }
-
-  calcArea() {
-    return this.largeur * this.hauteur;
-  }
+if (module.hot) {
+  module.hot.accept();
 }
 
-const carre = new Rectangle(10, 10);
+import log from "./modules/js/log"
 
-console.log(carre.area);
+log("Yet Another And Really Simple Webpack ES6 Starterkit")
