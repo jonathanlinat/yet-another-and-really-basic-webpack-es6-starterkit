@@ -1,28 +1,28 @@
-const path = require("path")
-const UglifyJsPlugin = require("uglifyjs-webpack-plugin")
-const MiniCssExtractPlugin = require("mini-css-extract-plugin")
-const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin")
-const HtmlWebPackPlugin = require("html-webpack-plugin")
-const CleanWebpackPlugin = require("clean-webpack-plugin")
-const webpack = require("webpack")
+const path = require('path')
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
+const HtmlWebPackPlugin = require('html-webpack-plugin')
+const CleanWebpackPlugin = require('clean-webpack-plugin')
+const webpack = require('webpack')
 
 module.exports = (env, options) => {
-  const isProductionMode = (options.mode === "production") ? true : false
-  
-  const src = path.resolve("./src")
-  const dest = path.resolve("./dist")
+  const isProductionMode = (options.mode === 'production')
+
+  const src = path.resolve('./src')
+  const dest = path.resolve('./dist')
 
   let webpackConfig = {
     entry: {
       app: [
-        "babel-polyfill",
-        src + "/app.js",
-        src + "/app.sass",
-        src + "/index.html"
+        'babel-polyfill',
+        src + '/app.js',
+        src + '/app.sass',
+        src + '/index.html'
       ]
     },
     devServer: {
-      host: "127.0.0.1",
+      host: '127.0.0.1',
       open: true,
       hot: true
     },
@@ -30,7 +30,7 @@ module.exports = (env, options) => {
       new CleanWebpackPlugin([dest]),
       new MiniCssExtractPlugin(),
       new HtmlWebPackPlugin({
-        template: src + "/index.html"
+        template: src + '/index.html'
       }),
       new webpack.NamedModulesPlugin(),
       new webpack.HotModuleReplacementPlugin()
@@ -38,16 +38,16 @@ module.exports = (env, options) => {
     module: {
       rules: [
         {
-          enforce: "pre",
+          enforce: 'pre',
           test: /\.js$/,
           exclude: /node_modules/,
-          loader: "eslint-loader",
+          loader: 'eslint-loader'
         },
         {
           test: /\.js$/,
           exclude: /node_modules/,
           use: {
-            loader: "babel-loader",
+            loader: 'babel-loader',
             options: {
               babelrc: false
             }
@@ -56,14 +56,14 @@ module.exports = (env, options) => {
         {
           test: /\.sass$/,
           use: [
-            isProductionMode ? MiniCssExtractPlugin.loader : "style-loader",
-            "css-loader",
-            "sass-loader"
+            isProductionMode ? MiniCssExtractPlugin.loader : 'style-loader',
+            'css-loader',
+            'sass-loader'
           ]
         },
         {
           test: /\.html$/,
-          use: "html-loader"
+          use: 'html-loader'
         }
       ]
     },
@@ -76,7 +76,7 @@ module.exports = (env, options) => {
         }),
         new OptimizeCSSAssetsPlugin(),
         new HtmlWebPackPlugin({
-          template: src + "/index.html",
+          template: src + '/index.html',
           hash: true,
           cache: true,
           minify: {

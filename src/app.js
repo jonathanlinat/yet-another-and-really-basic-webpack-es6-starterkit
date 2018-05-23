@@ -1,10 +1,12 @@
+import log from './modules/js/log'
+
 if (module.hot) {
-  module.hot.accept();
+  module.hot.accept()
 }
 
-import log from "./modules/js/log"
+const yo = Symbol('')
 
-const yo = Symbol()
-String.prototype[yo] = () => "Yo 👋"
+// eslint-disable-next-line
+String.prototype[yo] = () => 'Yo 👋'
 
-log(""[yo]())
+log(''[yo]())
