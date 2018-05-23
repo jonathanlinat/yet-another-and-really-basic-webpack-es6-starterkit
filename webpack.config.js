@@ -16,8 +16,9 @@ module.exports = (env, options) => {
     entry: {
       app: [
         "babel-polyfill",
+        src + "/app.js",
         src + "/app.sass",
-        src + "/app.js"
+        src + "/index.html"
       ]
     },
     devServer: {

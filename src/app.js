@@ -4,4 +4,7 @@ if (module.hot) {
 
 import log from "./modules/js/log"
 
-log("Yet Another And Really Simple Webpack ES6 Starterkit")
+const yo = Symbol()
+String.prototype[yo] = () => "Yo 👋"
+
+log(""[yo]())
