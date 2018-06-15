@@ -15,7 +15,7 @@
     "build": "webpack --mode production"
   },
   "babel": {
-    "presets": "@babel/preset-env",
+    "presets": "babel-preset-env",
     "plugins": "transform-class-properties"
   },
   "eslintConfig": {
