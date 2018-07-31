@@ -2,7 +2,7 @@
 
 A lightweight foundation for any Webpack 4 based frontend project, mainly inspired by [WBKD's Webpack ES6 Starterkit](https://github.com/wbkd/yet-another-webpack-es6-starterkit). 
 
-### Installation
+## Installation
 
 Clone this repository locally...
 
@@ -17,7 +17,7 @@ $ cd yet-another-and-really-basic-webpack-es6-starterkit/
 $ npm install
 ```
 
-### Start Dev Server
+### Start a Development server
 
 Start a local Web Server.
 
@@ -25,15 +25,17 @@ Start a local Web Server.
 $ npm run dev
 ```
 
-### Build Prod Version
+### Build a Production version
 
-Create a Production version of your project.
+Create a Production version of the project.
 
 ```
 $ npm run build
 ```
 
-### Features
+The _compiled_ version of the project will be available into the `dist` folder.
+
+## Features
 
 * Webpack 4
 * ES6 Support via [babel-loader](https://github.com/babel/babel-loader)
