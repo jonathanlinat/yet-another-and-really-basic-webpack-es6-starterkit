@@ -1,6 +1,6 @@
 # Yet Another And Really Basic Webpack ES6 Starterkit
 
-A lightweight foundation for any Webpack 4 based frontend project, mainly inspired by [WBKD's Webpack ES6 Starterkit](https://github.com/wbkd/yet-another-webpack-es6-starterkit). 
+A lightweight foundation for any Webpack 4 based frontend project, mainly inspired by [WBKD's Webpack Frontend Starterkit](https://github.com/wbkd/webpack-starter). 
 
 ## Installation
 

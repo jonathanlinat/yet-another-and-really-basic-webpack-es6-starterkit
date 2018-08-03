@@ -1,6 +1,6 @@
 {
   "name": "yet-another-and-really-basic-webpack-es6-starterkit",
-  "description": "A lightweight foundation for any Webpack 4 based frontend project, mainly inspired by WBKD's Webpack ES6 Starterkit.",
+  "description": "A lightweight foundation for any Webpack 4 based frontend project, mainly inspired by WBKD's Webpack Frontend Starterkit.",
   "author": "Jonathan Linat (https://github.com/jonathanlinat)",
   "homepage": "https://github.com/jonathanlinat/yet-another-and-really-basic-webpack-es6-starterkit",
   "version": "1.1.0",
@@ -62,10 +62,10 @@
     "mini-css-extract-plugin": "^0.4.1",
     "node-sass": "^4.9.2",
     "optimize-css-assets-webpack-plugin": "^5.0.0",
-    "sass-loader": "^7.0.3",
+    "sass-loader": "^7.1.0",
     "style-loader": "^0.21.0",
     "uglifyjs-webpack-plugin": "^1.2.7",
-    "webpack": "^4.16.3",
+    "webpack": "^4.16.4",
     "webpack-cli": "^3.1.0",
     "webpack-dev-server": "^3.1.5"
   },
