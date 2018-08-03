@@ -10,7 +10,7 @@ module.exports = (env, options) => {
   const isProductionMode = (options.mode === 'production')
 
   const src = path.resolve('./src')
-  const dest = path.resolve('./dist')
+  const dist = path.resolve('./dist')
 
   let webpackConfig = {
     entry: {
@@ -27,7 +27,7 @@ module.exports = (env, options) => {
       hot: true
     },
     plugins: [
-      new CleanWebpackPlugin([dest]),
+      new CleanWebpackPlugin([dist]),
       new MiniCssExtractPlugin(),
       new HtmlWebPackPlugin({
         template: src + '/index.html'
