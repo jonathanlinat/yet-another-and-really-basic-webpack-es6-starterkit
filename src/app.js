@@ -24,9 +24,7 @@
 
 import log from './modules/js/log'
 
-if (module.hot) {
-  module.hot.accept()
-}
+if (module.hot) module.hot.accept()
 
 const yo = Symbol('')
 

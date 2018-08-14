@@ -3,13 +3,13 @@
   "description": "A lightweight foundation for any Webpack 4 based frontend project, mainly inspired by WBKD's Webpack Frontend Starterkit.",
   "author": "Jonathan Linat (https://github.com/jonathanlinat)",
   "homepage": "https://github.com/jonathanlinat/yet-another-and-really-basic-webpack-es6-starterkit",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/jonathanlinat/yet-another-and-really-basic-webpack-es6-starterkit.git"
   },
-  "main": "app.js",
+  "main": "src/app.js",
   "scripts": {
     "dev": "webpack-dev-server --mode development --color",
     "build": "webpack --mode production"
@@ -53,7 +53,7 @@
     "eslint": "^5.3.0",
     "eslint-config-standard": "^11.0.0",
     "eslint-loader": "^2.1.0",
-    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-node": "^7.0.1",
     "eslint-plugin-promise": "^3.8.0",
     "eslint-plugin-standard": "^3.1.0",
