@@ -1,6 +1,14 @@
 # Yet Another And Really Basic Webpack ES6 Starterkit
 
-A lightweight foundation for any Webpack 4 based frontend project, mainly inspired by [WBKD's Webpack Frontend Starterkit](https://github.com/wbkd/webpack-starter). 
+A lightweight foundation for any Webpack 4 based frontend project.
+
+## Features
+
+* Webpack 4
+* ES6 Support via [babel-loader](https://github.com/babel/babel-loader)
+* Sass Support via [sass-loader](https://github.com/jtangelder/sass-loader)
+* Linting via [eslint-loader](https://github.com/MoOx/eslint-loader)
+* JavaScript Standard Style via [eslint-config-standard](https://github.com/standard/eslint-config-standard)
 
 ## Installation
 
@@ -35,10 +43,7 @@ $ npm run build
 
 The _compiled_ version of the project will be available into the `dist` folder.
 
-## Features
+## Projects based on this Starter Kit
 
-* Webpack 4
-* ES6 Support via [babel-loader](https://github.com/babel/babel-loader)
-* SASS Support via [sass-loader](https://github.com/jtangelder/sass-loader)
-* Linting via [eslint-loader](https://github.com/MoOx/eslint-loader)
-* JavaScript Standard Style via [eslint-config-standard](https://github.com/standard/eslint-config-standard)
+* ES6 Retrogaming Series: Pong [[Link](https://github.com/jonathanlinat/es6-retrogaming-series-pong)]
+* ES6 Experiments Series: Buffon's needle [[Link](https://github.com/jonathanlinat/es6-experiments-series-buffons-needle)]
