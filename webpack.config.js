@@ -58,6 +58,7 @@ module.exports = (env, options) => {
           use: [
             isProductionMode ? MiniCssExtractPlugin.loader : 'style-loader',
             'css-loader',
+            'postcss-loader',
             'sass-loader'
           ]
         },

@@ -6,8 +6,9 @@ A lightweight foundation for any Webpack 4 based frontend project.
 
 * Webpack 4
 * ES6 Support via [babel-loader](https://github.com/babel/babel-loader)
+* ES6 Linting via [eslint-loader](https://github.com/MoOx/eslint-loader)
 * Sass Support via [sass-loader](https://github.com/jtangelder/sass-loader)
-* Linting via [eslint-loader](https://github.com/MoOx/eslint-loader)
+* CSS Optimization Support via [postcss-loader](https://github.com/postcss/postcss-loader)
 * JavaScript Standard Style via [eslint-config-standard](https://github.com/standard/eslint-config-standard)
 
 ## Installation
