@@ -21,13 +21,16 @@ module.exports = (env, options) => {
         src + '/index.html'
       ]
     },
+    output: {
+      path: dist
+    },
     devServer: {
       host: '127.0.0.1',
       open: true,
       hot: true
     },
     plugins: [
-      new CleanWebpackPlugin([dist]),
+      new CleanWebpackPlugin(),
       new MiniCssExtractPlugin(),
       new HtmlWebPackPlugin({
         template: src + '/index.html'
