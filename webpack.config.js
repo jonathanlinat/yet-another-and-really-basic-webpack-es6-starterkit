@@ -35,7 +35,6 @@ module.exports = (env, options) => {
       new HtmlWebPackPlugin({
         template: src + '/index.html'
       }),
-      new webpack.NamedModulesPlugin(),
       new webpack.HotModuleReplacementPlugin()
     ],
     module: {
